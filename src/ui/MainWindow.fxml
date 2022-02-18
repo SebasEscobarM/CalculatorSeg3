@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #f6f6dd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainController">
+   <children>
+      <Separator layoutX="166.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" AnchorPane.leftAnchor="200.0" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="80.0" prefWidth="200.0" text="Historial" AnchorPane.bottomAnchor="520.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="historialTA" editable="false" layoutX="14.0" layoutY="121.0" prefHeight="200.0" prefWidth="168.0" style="-fx-background-color: #7fad6f;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font></TextArea>
+      <TextArea fx:id="operationTA" editable="false" layoutX="223.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7fad6f;" AnchorPane.bottomAnchor="480.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Agency FB" size="50.0" />
+         </font></TextArea>
+      <Button fx:id="sevenBTN" layoutX="220.0" layoutY="136.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="7" textFill="WHITE" AnchorPane.bottomAnchor="390.0" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="fourBTN" layoutX="220.0" layoutY="225.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="4" textFill="WHITE" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="oneBTN" layoutX="220.0" layoutY="323.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="1" textFill="WHITE" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="zeroBTN" layoutX="330.0" layoutY="390.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="0" textFill="WHITE" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="390.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <TextArea fx:id="solutionTA" editable="false" layoutX="250.0" layoutY="480.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7fad6f;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="480.0">
+         <font>
+            <Font name="Agency FB" size="50.0" />
+         </font></TextArea>
+      <Button fx:id="eightBTN" layoutX="230.0" layoutY="145.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="8" textFill="WHITE" AnchorPane.bottomAnchor="390.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="fiveBTN" layoutX="330.0" layoutY="220.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="5" textFill="WHITE" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="twoBTN" layoutX="330.0" layoutY="305.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="2" textFill="WHITE" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="solutionBTN" layoutX="440.0" layoutY="390.0" mnemonicParsing="false" onAction="#solveBTN" prefHeight="75.0" prefWidth="240.0" style="-fx-background-color: #2a989c;" text="Resolver" textFill="WHITE" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="390.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font></Button>
+      <Button fx:id="nineBTN" layoutX="330.0" layoutY="135.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="9" textFill="WHITE" AnchorPane.bottomAnchor="390.0" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="sixBTN" layoutX="330.0" layoutY="220.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="6" textFill="WHITE" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="threeBTN" layoutX="440.0" layoutY="305.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #524848;" text="3" textFill="WHITE" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="sumBTN" layoutX="440.0" layoutY="135.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #e39632;" text="+" AnchorPane.bottomAnchor="390.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="substBTN" layoutX="440.0" layoutY="220.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #e39632;" text="-" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="multBTN" layoutX="440.0" layoutY="305.0" mnemonicParsing="false" onAction="#writeSymbol" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #e39632;" text="*" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="ClearBTN" layoutX="220.0" layoutY="389.0" mnemonicParsing="false" onAction="#delete" prefHeight="75.0" prefWidth="90.0" style="-fx-background-color: #e39632;" text="C" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="390.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
